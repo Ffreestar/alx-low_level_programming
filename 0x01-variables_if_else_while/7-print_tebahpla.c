@@ -1,21 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * main - Entry point
+ * main - Entrry point
  *
  * Return: 0
  */
 int main(void)
 {
-	char a = 'a';
+	char a = 'z';
 
-	while (a <= 'z')
+	while (a >= 'a')
 	{
 		putchar(a);
-		a++;
+		a--;
 	}
-
 	putchar('\n');
 	return (0);
 }

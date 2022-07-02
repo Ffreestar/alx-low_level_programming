@@ -1,10 +1,13 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-/*
+#include <time.h>
+/* more header goes here. */
+
+
+/**
  * main - Entry point
- *
- * Return: Always 0 (Success)
+ * Description: if-else program.
+ * Return: (0) always - Success
  */
 int main(void)
 {
@@ -12,22 +15,12 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n == 0)
-	{
-	printf("%d is zero\n", n);
-	}
-	else if (n > 0)
-	{
-	printf("%d is positive\n", n);
-	}
-	else if (n < 0)
-	{
-	printf("%d is negative\n", n);
-	}
+	/* your code goes here */
+	if (n > 0)
+		printf("%i is positive\n", n);
+	else if (n == 0)
+		printf("%i is zero\n", n);
 	else
-	{
-	printf("%d is not number\n", n);
-	}
+		printf("%i is negative\n", n);
 	return (0);
-
 }

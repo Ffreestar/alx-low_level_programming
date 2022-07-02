@@ -1,27 +1,28 @@
-nclude <time.h>
-#include<stdio.h>
-/*
+#include <stdio.h>
+
+/**
  * main - Entry point
- * Return: Always 0 (Success)
+ *
+ * Return: 0
  */
 int main(void)
 {
-	signed char x;
-	int n;
+	char a = 'a';
 
-	for (n = 97; n <= 122; n++)
+	while (a <= 'z')
 	{
-	x = n;
-	printf("%c", x);
+		putchar(a);
+		a++;
 	}
-	for (n = 65; n <= 90; n++)
+
+	a = 'A';
+
+	while (a <= 'Z')
 	{
-	x = n;
-	printf("%c", x);
-	if (n == 90)
-	{
-	printf("\n");
+		putchar(a);
+		a++;
 	}
-	}
+
+	putchar('\n');
 	return (0);
 }

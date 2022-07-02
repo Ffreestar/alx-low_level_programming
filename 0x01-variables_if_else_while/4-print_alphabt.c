@@ -1,28 +1,17 @@
-#include <stdlib.h>
-#include <time.h>
-#include<stdio.h>
-/*
+#include <stdio.h>
+
+/**
  * main - Entry point
- * Return: Always 0 (Success)
+ *
+ * Return: 0
  */
 int main(void)
 {
-	signed char x;
-	int n;
+	char b;
 
-	for (n = 97; n <= 122; n++)
-	{
-	x = n;
-	if (n == 113 || n == 101)
-	{
-	continue;
-	}
-	printf("%c", x);
-	if (n == 122)
-	{
-	printf("\n");
-	}
-	
-	}
+	for (b = 'a'; b <= 'z'; b++)
+		if (b != 'q' && b != 'e')
+			putchar(b);
+	putchar('\n');
 	return (0);
 }
